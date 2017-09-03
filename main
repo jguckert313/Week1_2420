@@ -1,0 +1,127 @@
+##Jack Guckert 
+##00797014
+
+import random
+import time
+
+#  
+# #Never switches doors
+#  
+# count = 1000000
+# wins = 0
+# loose = 0
+#  
+# while (count > 0):
+#      
+#     def counting (count):
+#         assert (count > 0)
+#          
+#     doors = list(range(1,4))
+#  
+#     winningdoor = random.choice(doors)
+#  
+#     contestantdoor = random.choice(doors)
+#     doors.remove(contestantdoor)
+#  
+#     loosingdoor = random.choice(doors)
+#     doors.remove(loosingdoor)
+#  
+#     if winningdoor == contestantdoor:
+#         wins = wins + 1 
+#          
+#     else:
+#         loose = loose + 1
+#          
+#     count = count - 1 
+#      
+# wonPercentage = wins / 1000000.0
+# lostPercentage = loose / 1000000.0
+#  
+# print('Never Switching')
+# print(wonPercentage, 'percent won')
+# print(lostPercentage, 'percent lost')
+# print(wins,"wins")
+# print(loose, "lost")
+
+
+########################################################################
+########################################################################
+
+
+#Always switches doors 
+
+# count = 1000000
+# wins = 0
+# loose = 0
+# 
+# while (count > 0):
+#     
+#     def counting (count):
+#         assert (count > 0)
+#         
+#     doors = list(range(1,4))
+# 
+#     winningdoor = random.choice(doors)
+# 
+#     contestantdoor = random.choice(doors)
+#     doors.remove(contestantdoor)
+# 
+#     loosingdoor = random.choice(doors)
+# 
+#     contestantdoor = random.choice(doors)
+#     
+#     if winningdoor == contestantdoor:
+#         wins = wins + 1 
+#         
+#     else:
+#         loose = loose + 1
+#         
+#     count = count - 1 
+#     
+# wonPercentage = wins / 1000000.0
+# lostPercentage = loose / 1000000.0
+# 
+# print('Always Switching')
+# print(wonPercentage, 'percent won')
+# print(lostPercentage, 'percent lost')
+# print(wins,"wins")
+# print(loose, "lost")
+
+
+########################################################################
+########################################################################
+
+countNum = 0
+listSize = 1000
+
+while listSize < 100001:
+    
+    start_time = time.clock()
+
+    while (countNum < listSize):
+    
+
+        doors = list(range(0,listSize))
+        randomNum = []
+        for x in range(1):
+            randomNum.append(random.choice(doors))
+            countNum = countNum + 1
+            
+    
+    listofNumbers = random.choice(randomNum)
+
+    if listSize == listSize:
+        listSize = listSize + 1000 
+
+    print(listofNumbers)
+    minute  = 60
+    start_time = start_time/minute
+    
+print("%s minutes" % start_time)
+
+
+########################################################################
+########################################################################
+
+    
+
